@@ -5,96 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homework</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="/image/logo.png" alt=""></div>
-        <div>
-            <div>
-                <select name="header-select" id="">
-                    <option value="1">Producted</option>
-                </select>
-                <div>
-                    <input type="text" placeholder="Zoek product">
-                    <input type="submit" name="" id="">
-                </div>
-                <div>
-                    <input type="radio" name="head-radio" id="head-radio-1">
-                    <input type="radio" name="head-radio" id="head-radio-2">
-                    <br>
-                    <label for="head-radio-1">Excl.<br>BTW</label>
+    <header class="header">
+        <div class="block">
+            <div class="logo"><img src="/image/logo.png" alt=""></div>
+            <div class="header__content">
+                <div class="header__firsLine">
+                    <select name="header-select" id="" class="search__select pading_7">
+                        <option value="1">Producted</option>
+                    </select>
+
+                    <div class="search pading_7">
+                        <input type="text" class="searchTerm" placeholder="Zoek product">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <form action="" class="pading_7">
+                        <div class="switch">
+                            <input name="radio_btn" type="radio" id="rdo_excl" checked>
+                            <label for="rdo_excl">Excl.<br>BTW</label>
+                            <input name="radio_btn" type="radio" id="rdo_incl">
+                            <label for="rdo_incl">Incl.<br>BTW</label>
+                        </div>
+                    </form>
                     
+                        
+                    
+                    <button class="btn__inloggen pading_7"><i class="fa fa-user"></i> Inloggen</button>
+                    <button class="btn_card">
+                        <i class="fa fa-shopping-cart"></i>
+                        <div class="btn_col_elem">
+                            2
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        
+                    </button>
                 </div>
-                <button>Inloggen</button>
-                <select name="" id=""></select>
-            </div>
-            <div>
-                <ul>
-                    <li>Uitstekende klantenservice</li>
-                    <li>Gratis levering of afhalen in onze shops</li>
-                    <li>Gratis levering of afhalen in onze shops</li>
-                </ul>
+                <div class="header__secondLine">
+                    <ul class="list">
+                        <li><i class="fa fa-thumbs-up"></i>Uitstekende klantenservice</li>
+                        <li><i class="fa fa-truck"></i>Gratis levering of afhalen in onze shops</li>
+                        <li><i class="fa fa-phone"></i>Gratis levering of afhalen in onze shops</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        
     </header>
-    <section>
-        <nav>
-            <ul>
-                <a href="#"><li>Behiizingen</li></a>
-                <a href="#"><li>Bevestigingsmateriaal</li></a>
-                <a href="#"><li>Draad en kabel</li></a>
-                <a href="#"><li>Domotica</li></a>
-                <a href="#"><li>Schakelmateriaal</li></a>
-                <a href="#"><li>Rook- en hittemeldors</li></a>
-                <a href="#"><li>Verdeelsystemen</li></a>
-                <a href="#"><li>Lichtronnen</li></a>
-                <a href="#"><li>LED-lichtbronnen</li></a>
-                <a href="#"><li>Installatiemateriaal</li></a>
-                <a href="#"><li>Kabeldraagsystemen</li></a>
-                <a href="#"><li>Armaturen</li></a>
-                <a href="#"><li>Data en multimedia</li></a>
-                <a href="#"><li>Ruimte-oplossingen</li></a>
-                <a href="#"><li>Lichtregeling</li></a>
-            </ul>
-        </nav>
-        <div>
-            <div>
-                <div><img src="/image/1.png" alt=""></div>
-                <span>Gehoorbescherming<br>20% korting</span>
-                <button>Bestel nu</button>
-            </div>
-            <div>
-                <span>Heb je een vraag?<br>Wij staan voor je klaar!</span>
-                <span>Openingstijden:</span>
-                <div>
-                    <span>Ma-Vr</span>
-                    <span>Za</span>
+    <section class="second__section">
+        <div class="block">
+            <nav class="nav">
+                <a href="#">Behiizingen</a>
+                <a href="#">Bevestigingsmateriaal</a>
+                <a href="#">Draad en kabel</a>
+                <a href="#">Domotica</a>
+                <a href="#">Schakelmateriaal</a>
+                <a href="#">Rook- en hittemeldors</a>
+                <a href="#">Verdeelsystemen</a>
+                <a href="#">Lichtronnen</a>
+                <a href="#">LED-lichtbronnen</a>
+                <a href="#">Installatiemateriaal</a>
+                <a href="#">Kabeldraagsystemen</a>
+                <a href="#">Armaturen</a>
+                <a href="#">Data en multimedia</a>
+                <a href="#">Ruimte-oplossingen</a>
+                <a href="#">Lichtregeling</a>
+            </nav>
+            <main class="main">
+                <div class="main_prposal">
+                    <div class="goods_name">
+                        <h2>Gehoorbescherming<br>20% korting</h2>
+                        <button class="button_bestel_nu">Bestel nu</button>
+                    </div>
+                    <div class="main_prposal__img"><img src="/image/1.png" alt=""></div>
+                </div>
+                <div class="schedule">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Heb je een vraag?</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Wij staan voor je klaar!</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-clock-o"></i></td>
+                            <td colspan="2">Openingstijden:</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Ma-Vr</td>
+                            <td >08.00 uur - 18.00 uur</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Za</td>
+                            <td>08.00 uur - 16.00 uur</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td colspan="3">Telefonisch bereikbaar:</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Ma-Vr</td>
+                            <td colspan="2">08.00 uur - 18.00 uur</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Za</td>
+                            <td colspan="2">08.00 uur - 16.00 uur</td>
+                        </tr>
+                    </table>
                 </div>
                 <div>
-                    <span>08.00 uur - 18.00 uur</span>
-                    <span>08.00 uur - 16.00 uur</span>
+                    <div>
+                        <span>Schuurmachines<br>Vanaf € 150,-</span>
+                        <button class="button_bestel_nu">Bestel nu</button>
+                    </div>
+
+                    <div><img src="/image/2.png" alt=""></div>
                 </div>
-                <span>Telefonisch bereikbaar:</span>
                 <div>
-                    <span>Ma-Vr</span>
-                    <span>Za</span>
+                    <div>
+                        <span>Rookmelders<br>Vanaf € 150,-</span>
+                        <button class="button_bestel_nu">Bestel nu</button>
+                    </div>
+                    
+                    <div><img src="/image/3.png" alt=""></div>
                 </div>
-                <div>
-                    <span>08.00 uur - 18.00 uur</span>
-                    <span>08.00 uur - 16.00 uur</span>
-                </div>
-            </div>
-            <div>
-                <div><img src="/image/2.png" alt=""></div>
-                <span>Schuurmachines<br>Vanaf € 150,-</span>
-                <button>Bestel nu</button>
-            </div>
-            <div>
-                <div><img src="/image/3.png" alt=""></div>
-                <span>Rookmelders<br>Vanaf € 150,-</span>
-                <button>Bestel nu</button>
-            </div>
-        </div>
+            </main>
+        </div> 
     </section>
     <section>
         <button></button>

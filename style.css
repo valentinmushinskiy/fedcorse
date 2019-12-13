@@ -1,0 +1,245 @@
+@font-face{
+    font-family: 'Avenir-Black';
+    src: url('/font/Avenir-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul, body, h1, h2, table, tr, td{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Avenir-Black', sans-serif;
+    font-size: 14px;
+    width: 100%;
+
+}
+
+.header{
+    height: 89px;
+    display: flex;
+    background: #ffc600;
+}
+
+.block{
+    margin: 0 80px 0 89px;
+    display: flex;
+}
+
+.logo{
+    margin-top: 5px;
+}
+
+.header__content{
+    margin-left: 109px;
+}
+
+.header__firsLine{
+    display: flex;
+    margin-top: 19px;
+    height: 40px;
+    
+}
+
+.pading_7{
+    margin-right: 7px;
+}
+
+
+.search__select{
+    width: 148px;
+    font-family: 'Avenir-Black', sans-serif;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+}
+
+.search {
+    width: 507px;
+    height: 40px;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 0px solid #fff;
+    border-right: none;
+    padding-left: 8px;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+    font-family: 'Avenir-Black', sans-serif;
+    color: #000;
+}
+  
+.searchTerm:focus{
+    color: #000;
+}
+  
+.searchButton {
+    width: 40px;
+    height: 40px;
+    border: 0px solid #000;
+    background: #fff;
+    text-align: center;
+    color: #000;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.switch{
+    border-radius: 25px;
+    display: flex;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.switch label{
+    cursor: pointer;
+    padding: 4px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.switch input + label{
+    background: #000;
+    transition: .2s;
+}
+
+.switch input:checked + label{
+    background: #fff;
+    transition: .2s;
+}
+
+
+.btn__inloggen{
+    border: 0;
+    border-radius: 3px;
+
+    background: white;
+    font-family: 'Avenir-Black', sans-serif;
+    font-size: 14px;
+}
+
+.btn_card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 84px;
+    min-height: 40px;
+    padding: 0 15px;
+    border: 0;
+    border-radius: 3px;
+
+
+    background: #000;
+    color: #fff;
+    
+    font-size: 20px;
+}
+
+.btn_col_elem{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Avenir-Black', sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 8px;
+}
+
+
+.list{
+    list-style: none;
+
+    display: flex;
+    margin: 7px 0 0 160px;
+    padding: 0;
+
+    font-size: 12px;
+}
+
+li {
+    margin-right: 22px;
+}
+
+li i.fa{
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.second__section{
+    margin-top: 52px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    
+    line-height: 31px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 170px;
+}
+
+
+.main > div{
+    background: rgb(240, 240, 240);
+    margin-right: 7px;
+}
+
+
+h2{
+    font-size: 32px;
+    margin: 0;
+}
+
+.main_prposal{
+    display: flex;
+    padding: 30px 36px 38px 35px;
+    max-height: 163px;
+    max-width: 455px;
+}
+
+
+.schedule{
+    min-width: 253px;
+    max-height: 231px;
+}
+
+
+
+.button_bestel_nu{
+    margin: 0;
+    height: 40px;
+    width: 78px;
+    margin-top: 12px;
+
+    background: #000;
+    border: 0;
+    color: #fff;
+    font-family: 'Avenir-Black', sans-serif;
+    border-radius: 3px;
+    
+}
+
+.main_prposal__img{
+    margin: 18px 0 0 15px;
+    height: 145px;
+    width: 136px;
+}

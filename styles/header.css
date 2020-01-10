@@ -1,0 +1,145 @@
+header{
+    background: #ffc600;
+    width: 100%;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 15%;
+    display: flex;
+    align-self: center;
+}
+
+.header__content{
+    width: 85%;
+}
+
+.header__firsLine{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+
+    margin-top: 20px;
+}
+
+.header__firsLine > *{
+    margin-right: 8px;
+}
+
+.header__firsLine > *:last-child{
+    margin-right: 0;
+}
+
+
+.search__select{
+    max-height: 40px;
+    width: 16%;
+    /* padding: 15px 9px; */
+}
+
+.btn_select{
+    display: flex;
+    justify-content: space-between;
+
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.search{
+    height: 40px;
+    width: 54%;
+    display: flex;
+}
+
+.search input{
+    border: 0;
+    width: 100%;
+    border-radius: 3px 0 0 3px;
+    padding-left: 8px;
+}
+
+.searchButton{
+    background: #fff;
+    border-radius: 0 3px 3px 0;
+}
+
+.switch{
+    display: flex;
+}
+
+.switch input{
+    display: none;
+}
+
+.switch label{
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    background: #fff;
+}
+
+.switch input + label{
+    background: #000;
+}
+
+.switch input:checked + label{
+    background: #fff;
+}
+
+.inloggen_btn{
+    width: 10%;
+
+    border-radius: 3px;
+    border-bottom: 2px solid rgb(175, 175, 175);
+}
+
+.btn_card{
+    width: 8%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.btn_card .fa-shopping-cart{
+    font-size: 24px;
+}
+
+.btn_card .btn_col_elem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 10px;
+
+    margin-top: 5px;
+}
+
+.header__secondLine{
+    margin: 8px 0 8px 17%;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    font-size: 12px;
+}
+
+.list li{
+    margin-right: 22px;
+}
+
+.list li .fa{
+    margin-right: 10px;
+}

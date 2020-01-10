@@ -1,0 +1,27 @@
+@media (max-width: 1169px){
+    .carusel_button{
+        display: none;
+    }
+}
+
+@media (max-width: 1036px){
+    .list{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 880px){
+    .nav{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+    }
+}
+/* 
+@media (max-width: 789px){
+    
+
+    
+} */

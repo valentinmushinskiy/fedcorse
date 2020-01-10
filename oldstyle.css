@@ -40,18 +40,18 @@ body{
 /************** HEADER *************************/
 
 .header{
-    display: flex;
+    /* display: flex; */
     background: #ffc600;
 }
 
 .logo{
     margin-top: 5px;
-    width: 28.5%;
+    flex: 2;
 }
 
-/* .header__content{
-    margin-left: 109px;
-} */
+.header__content{
+    flex: 10;
+}
 
 .header__firsLine{
     display: flex;
@@ -65,14 +65,14 @@ body{
 }
 
 .search__select{
-    width: 148px;
+    /* width: 148px; */
     font-family: 'Avenir-Black', sans-serif;
-    border: 1px solid black;
+    border: 0;
     border-radius: 3px;
     background: #000;
     color: #fff;
     font-size: 14px;
-    display: flex;
+    flex: 2;
 }
 
 .search {
@@ -81,7 +81,7 @@ body{
     height: 40px;
     position: relative;
     display: flex;
-    flex: 1;
+    flex: 6;
 }
 
 .searchTerm {
@@ -216,25 +216,37 @@ li i.fa{
     display: flex;
     flex-direction: column;
     
-    line-height: 29.5px;
+    line-height: 31px;
+    flex: 4;
 }
 
 .main{
     display: flex;
     flex-wrap: wrap;
 
-    margin-left: 170px;
+    margin: -30px;  
+    flex: 8;
+
+    width: 100%;
 }
 
-.main > div{
+.item {
+    color: #000;
+    flex: 1 1 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.small {
+    flex: 1 1 33%;
+}
+
+.main_item {
     background: rgb(240, 240, 240);
-    margin-right: 4px;
+    padding: 40px 10px;
+    border-radius: 3px;
+    height: 100%;
 }
-
-.main > div:nth-child(2n){
-    margin-right: 0;
-}
-
 
 h2{
     font-size: 32px;
@@ -243,20 +255,19 @@ h2{
 
 .main_prposal{
     display: flex;
-    padding: 30px 36px 38px 35px;
-    min-height: 163px;
-    min-width: 400px;
-    margin-bottom: 9px;
+    justify-content: space-around;
+    padding: 30px 35px;
+    /* padding: 30px 36px 38px 35px; */
 }
 
 
-.schedule{
+/* .schedule{
     min-width: 260px;
     max-height: 231px;
-}
+} */
 
 .schedule_header{
-    padding: 21px 0 15px 34px;
+    padding: 0 0 15px 34px;
 }
 
 .schedule_header span{
@@ -265,7 +276,7 @@ h2{
 
 .schedule_block{
     padding-top: 20px;
-}
+} 
 
 .schedule_icon{
     padding: 0 6px 0 10px;
@@ -273,7 +284,6 @@ h2{
 
 
 .schedule_time{
-
     padding: 0 23px 0 32px;
     display: flex;
     justify-content: space-between;
@@ -299,8 +309,6 @@ h2{
 
 .main_prposal__img{
     margin: 18px 0 0 15px;
-    height: 145px;
-    width: 136px;
 }
 
 .description__buttton{
@@ -309,14 +317,9 @@ h2{
 }
 
 .prposal_bottom{
-    height: 225px;
-    width: 389.5px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    padding: 0 20px;
 }
 
 
@@ -347,11 +350,22 @@ h2{
     background: rgb(240, 240, 240);
 }
 
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .carusel{
+    display: flex;
+    position: relative;
+    transform: left 1s ease-in-out;
+
+    /* left: -20%; */
     border-top: 1px solid rgb(221, 221, 221);
-    display: flex;    
+    /* display: flex;    
     justify-content: space-between;
-    height: 278px;
+    height: 278px; */
 }
 
 /* .carusel::before{
@@ -363,29 +377,32 @@ div.unshowd{
     display: none;
 }
 
-.carusel .show{
-    min-width: 221px;
+
+
+.carusel .carusel_item{
+    /* min-width: 221px; */
     border-right: 1px solid rgb(221, 221, 221);
     padding: 40px 50px;
-    display: block;
     text-align: center;
+
+    flex: 0 0 20%;
 }
 
-.carusel .show:last-of-type{
+.carusel .carusel_item:last-of-type{
     border-right: none;
 }
 
-.img_carusel{
+/* .img_carusel{
     min-width: 117px;
     min-height: 82px;
-}
+} */
 
 .img_carusel > img{
     margin: 0;
     
 }
 
-.description_carusel{
+/* .description_carusel{
     min-width: 135px;
     text-align: left;
 
@@ -399,7 +416,7 @@ div.unshowd{
 
 .price_carusel{
     font-size: 40px;
-}
+} */
 
 
 
@@ -459,6 +476,7 @@ h3{
 
 footer{
     margin-top: 40px;
+    flex: 1 1;
 }
 
 .block_footer{
@@ -571,16 +589,11 @@ footer{
     .main{
         display: flex;
         flex-wrap: wrap;
-    
-        margin-left: 0px;
+        width: 100vw;
+        /* margin-left: 0px; */
     }
 
     .main_prposal{
-        display: flex;
-        justify-content: space-around;
         padding: 30px 36px 38px 35px;
-        min-height: 163px;
-        min-width: 100vw;
     }
-
 }

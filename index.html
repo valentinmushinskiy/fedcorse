@@ -5,246 +5,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homework</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">   
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <header class="header">
         <div class="block">
-            <div class="logo"><img src="/image/logo.png" alt=""></div>
-            <div class="header__content">
-                <div class="header__firsLine">
-                    <select name="header-select" id="" class="search__select pading_7">
-                        <option value="1">Producted</option>
-                    </select>
+            <div class="header__wrapper">
+                <div class="logo"><img src="/image/logo.png" alt=""></div>
+                <div class="header__content">
+                    <div class="header__firsLine">
+                        
+                        <button class="btn_select search__select">
+                            Producted
+                            <div>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                        </button>
+    
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="Zoek product">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
 
-                    <div class="search pading_7">
-                        <input type="text" class="searchTerm" placeholder="Zoek product">
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
+                        <form action="">
+                            <div class="switch">
+                                <input name="radio_btn" type="radio" id="rdo_excl" checked>
+                                <label for="rdo_excl">Excl.<br>BTW</label>
+                                <input name="radio_btn" type="radio" id="rdo_incl">
+                                <label for="rdo_incl">Incl.<br>BTW</label>
+                            </div>
+                        </form>
+                        
+                        <button class="btn__white inloggen_btn"><i class="fa fa-user"></i> Inloggen</button>
+                        <button class="btn_select btn_card">
+                            <i class="fa fa-shopping-cart"></i>
+                            <div class="btn_col_elem">
+                                2
+                                <i class="fa fa-angle-down"></i>
+                            </div>
                         </button>
                     </div>
-                    <form action="" class="pading_7">
-                        <div class="switch">
-                            <input name="radio_btn" type="radio" id="rdo_excl" checked>
-                            <label for="rdo_excl">Excl.<br>BTW</label>
-                            <input name="radio_btn" type="radio" id="rdo_incl">
-                            <label for="rdo_incl">Incl.<br>BTW</label>
-                        </div>
-                    </form>
-                    
-                        
-                    
-                    <button class="btn__inloggen pading_7"><i class="fa fa-user"></i> Inloggen</button>
-                    <button class="btn_card">
-                        <i class="fa fa-shopping-cart"></i>
-                        <div class="btn_col_elem">
-                            2
-                            <i class="fa fa-angle-down"></i>
-                        </div>
-                        
-                    </button>
-                </div>
-                <div class="header__secondLine">
-                    <ul class="list">
-                        <li><i class="fa fa-thumbs-up"></i>Uitstekende klantenservice</li>
-                        <li><i class="fa fa-truck"></i>Gratis levering of afhalen in onze shops</li>
-                        <li><i class="fa fa-phone"></i>Gratis levering of afhalen in onze shops</li>
-                    </ul>
+                    <div class="header__secondLine">
+                        <ul class="list">
+                            <li><i class="fa fa-thumbs-up"></i>Uitstekende klantenservice</li>
+                            <li><i class="fa fa-truck"></i>Gratis levering of afhalen in onze shops</li>
+                            <li><i class="fa fa-phone"></i>Gratis levering of afhalen in onze shops</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        
     </header>
     <section class="first__section">
         <div class="block">
-            <nav class="nav">
-                <a href="#">Behiizingen</a>
-                <a href="#">Bevestigingsmateriaal</a>
-                <a href="#">Draad en kabel</a>
-                <a href="#">Domotica</a>
-                <a href="#">Schakelmateriaal</a>
-                <a href="#">Rook- en hittemeldors</a>
-                <a href="#">Verdeelsystemen</a>
-                <a href="#">Lichtronnen</a>
-                <a href="#">LED-lichtbronnen</a>
-                <a href="#">Installatiemateriaal</a>
-                <a href="#">Kabeldraagsystemen</a>
-                <a href="#">Armaturen</a>
-                <a href="#">Data en multimedia</a>
-                <a href="#">Ruimte-oplossingen</a>
-                <a href="#">Lichtregeling</a>
-            </nav>
-            <main class="main">
-                <div class="main_prposal">
-                    <div class="goods_name">
-                        <h2>Gehoorbescherming<br>20% korting</h2>
-                        <button class="button_bestel_nu black_button">Bestel nu</button>
-                    </div>
-                    <div class="main_prposal__img"><img src="/image/1.png" alt=""></div>
-                </div>
-                <div class="schedule">
-                    <div class="schedule_header">
-                        <span>Heb je een vraag?</span>
-                        <span>Wij staan voor je klaar!</span>
-                    </div>
-                    <div>
-                        <div>
-                            <i class="fa fa-clock-o schedule_icon"></i>
-                            <span>Openingstijden:</span>
-                        </div>
-                        <div class="schedule_time">
-                            <span>Ma-Vr</span>
-                            <span>08.00 uur - 18.00 uur</span>
-                        </div>
-                        <div class="schedule_time">
-                            <span>Za</span>
-                            <span>08.00 uur - 16.00 uur</span>
-                        </div>
-                    </div>
-                    <div class="schedule_block">
-                        <div>
-                            <i class="fa fa-phone schedule_icon"></i>
-                            <span>Telefonisch bereikbaar:</span>
-                        </div>
-                        <div class="schedule_time">
-                            <span>Ma-Vr</span>
-                            <span>08.00 uur - 18.00 uur</span>
-                        </div>
-                        <div class="schedule_time">
-                            <span>Za</span>
-                            <span>08.00 uur - 16.00 uur</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="prposal_bottom">
-                    <div class="description__buttton"> 
-                        <span class="prposal_description">Schuurmachines<br>Vanaf € 150,-</span>
-                        <button class="button_bestel_nu black_button">Bestel nu</button>
-                    </div>
 
-                    <div class="img_prposal"><img src="/image/2.png" alt=""></div>
-                </div>
-                <div class="prposal_bottom">
-                    <div class="description__buttton">
-                        <span class="prposal_description">Rookmelders<br>Vanaf € 150,-</span>
-                        <button class="button_bestel_nu black_button">Bestel nu</button>
+            <div class="firstsection__wrapper">
+
+                <nav class="nav">
+                    <a href="#">Behiizingen</a>
+                    <a href="#">Bevestigingsmateriaal</a>
+                    <a href="#">Draad en kabel</a>
+                    <a href="#">Domotica</a>
+                    <a href="#">Schakelmateriaal</a>
+                    <a href="#">Rook- en hittemeldors</a>
+                    <a href="#">Verdeelsystemen</a>
+                    <a href="#">Lichtronnen</a>
+                    <a href="#">LED-lichtbronnen</a>
+                    <a href="#">Installatiemateriaal</a>
+                    <a href="#">Kabeldraagsystemen</a>
+                    <a href="#">Armaturen</a>
+                    <a href="#">Data en multimedia</a>
+                    <a href="#">Ruimte-oplossingen</a>
+                    <a href="#">Lichtregeling</a>
+                </nav>
+                <main class="main">
+                    <div class="main__wrapper">
+                        <div class="item">
+                            <div class="main_prposal main_item">
+                                <div class="description__buttton">
+                                    <h3>Gehoorbescherming<br>20% korting</h3>
+                                    <button class="button_bestel_nu black_button">Bestel nu</button>
+                                </div>
+                                <div class="main_prposal__img"><img src="/image/1.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item small">
+                            <div class="schedule main_item">
+                                <div class="schedule_header">
+                                    <span>Heb je een vraag?</span>
+                                    <br>
+                                    <span>Wij staan voor je klaar!</span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa fa-clock-o schedule_icon"></i>
+                                        <span>Openingstijden:</span>
+                                    </div>
+                                    <div class="schedule_time">
+                                        <div>
+                                            <span>Ma-Vr</span>
+                                            <span>08.00 uur - 18.00 uur</span>
+                                        </div>
+                                        <div>
+                                            <span>Za</span>
+                                            <span>08.00 uur - 16.00 uur</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule_block top-padding">
+                                    <div>
+                                        <i class="fa fa-phone schedule_icon"></i>
+                                        <span>Telefonisch bereikbaar:</span>
+                                    </div>
+                                    <div class="schedule_time">
+                                        <div>
+                                            <span>Ma-Vr</span>
+                                            <span>08.00 uur - 18.00 uur</span>
+                                        </div>
+                                        <div>
+                                            <span>Za</span>
+                                            <span>08.00 uur - 16.00 uur</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="prposal_bottom main_item">
+                                <div class="description__buttton"> 
+                                    <h4 class="prposal_description">Schuurmachines<br>Vanaf € 150,-</h4>
+                                    <button class="button_bestel_nu black_button">Bestel nu</button>
+                                </div>
+            
+                                <div class="img_prposal"><img src="/image/2.png" alt=""></div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="prposal_bottom main_item">
+                                <div class="description__buttton">
+                                    <h4 class="prposal_description">Rookmelders<br>Vanaf € 150,-</h4>
+                                    <button class="button_bestel_nu black_button">Bestel nu</button>
+                                </div>
+                                
+                                <div><img src="/image/3.png" alt=""></div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div><img src="/image/3.png" alt=""></div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div> 
     </section>
     <section class="second_section">
-        <div class="block">
-            <button></button>
-            <h2 class="bestselers">Bestselers</h2>
-            <div class="carusel">
-                <div class="show">
-                    <a href="#">
-                        <div class="img_carusel" >
-                            <img src="/image/slider-1.png" alt="">
-                        </div>
-                        
-                        <div class="description_carusel">
-                            <span class="name_carusel">Schuurmachine FERM Ak450970</span>
-                            <br>
-                            <span class="price_carusel">€ 150,-</span>
-                        </div>
-                    </a>
-                    
-                </div>
-                <div class="show">
-                    <a href="#">
-                        <div class="img_carusel" >
-                            <img src="/image/slider-2.png" alt="">
-                        </div>
-                        <div class="description_carusel">
-                            <span class="name_carusel">Rookmelder Special Ak450970</span>
-                            <br>
-                            <span class="price_carusel">€ 50,-</span>
-                        </div>
-                    </a>
-                    
-                </div>
-                <div class="show">
-                    <a href="#">
-                        <div class="img_carusel" >
-                            <img src="/image/slider-1.png" alt="">
-                        </div>
-                        <div class="description_carusel">
-                            <span class="name_carusel">Schuurmachine FERM Ak450970</span>
-                            <br>
-                            <span class="price_carusel">€ 150,-</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="show">
-                    <a href="#">
-                        <div class="img_carusel" >
-                            <img src="/image/slider-2.png" alt="">
-                        </div>
+        <div class="block carusel_block">
+            <a class="carusel_button left_button"><i class="fa fa-chevron-circle-left"></i></a>
+            <h3>Bestselers</h3>
+            <div class="carusel__wrapper">
 
-                        <div class="description_carusel">
-                            <span class="name_carusel">Rookmelder Special Ak450970</span>
-                            <br>
-                            <span class="price_carusel">€ 50,-</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="show">
-                    <a href="#">
-                        <div class="img_carusel">
-                            <img src="/image/slider-1.png" alt="">
-                        </div>
+                <div class="carusel">
+
+                    <div class="carusel_item">
+                        <a href="#">
+                            <div class="img_carusel" >
+                                <img src="/image/slider-1.png" alt="">
+                            </div>
+                            
+                            <div class="description_carusel">
+                                <span class="name_carusel">Schuurmachine FERM Ak450970</span>
+                                <br>
+                                <h2>€ 150,-</h2>
+                            </div>
+                        </a>
                         
-                        <div class="description_carusel">
-                            <span class="name_carusel">Schuurmachine FERM Ak450970</span>
-                            <br>
-                            <span class="price_carusel">€ 150,-</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- <div class="unshowd">
-                    <a href="#">
-                        <div class="img_carusel">
-                            <img class="" src="/image/slider-2.png" alt="">
-                        </div>
+                    </div>
+                    <div class="carusel_item">
+                        <a href="#">
+                            <div class="img_carusel" >
+                                <img src="/image/slider-2.png" alt="">
+                            </div>
+                            <div class="description_carusel">
+                                <span class="name_carusel">Rookmelder Special Ak450970</span>
+                                <br>
+                                <h2>€ 50,-</h2>
+                            </div>
+                        </a>
                         
-                        <div class="description_carusel">
-                            <span class="name_carusel">Rookmelder Special Ak450970</span>
-                            <br>
-                            <span class="price_carusel">€ 50,-</span>
-                        </div>
-                    </a>
-                </div> -->
-                
+                    </div>
+                    <div class="carusel_item">
+                        <a href="#">
+                            <div class="img_carusel" >
+                                <img src="/image/slider-1.png" alt="">
+                            </div>
+                            <div class="description_carusel">
+                                <span class="name_carusel">Schuurmachine FERM Ak450970</span>
+                                <br>
+                                <h2>€ 150,-</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carusel_item">
+                        <a href="#">
+                            <div class="img_carusel" >
+                                <img src="/image/slider-2.png" alt="">
+                            </div>
+    
+                            <div class="description_carusel">
+                                <span class="name_carusel">Rookmelder Special Ak450970</span>
+                                <br>
+                                <h2>€ 50,-</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carusel_item">
+                        <a href="#">
+                            <div class="img_carusel">
+                                <img src="/image/slider-1.png" alt="">
+                            </div>
+                            
+                            <div class="description_carusel">
+                                <span class="name_carusel">Schuurmachine FERM Ak450970</span>
+                                <br>
+                                <h2>€ 150,-</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- <div class="unshowd">
+                        <a href="#">
+                            <div class="img_carusel">
+                                <img class="" src="/image/slider-2.png" alt="">
+                            </div>
+                            
+                            <div class="description_carusel">
+                                <span class="name_carusel">Rookmelder Special Ak450970</span>
+                                <br>
+                                <h2>€ 50,-</h2>
+                            </div>
+                        </a>
+                    </div> -->
+                </div> 
             </div>
-            <button></button>
+            <a class="carusel_button right_button"><i class="fa fa-chevron-circle-right"></i></a>
         </div>
     </section>
     <section class="section_three">
         <div class="block">
-            <div class="block_caption firs_img">
-                <div class="caption white_text ">
-                    <h2>Nachtbezorging</h2>
-                    <span>Vandaag besteld vannacht al in huis</span>
+            <div class="sectionThree__wrapper">
+                <div class="img_item">
+                    <div class="img">
+                        <img src="/image/bg1.png" alt="">
+                    </div>
+                    <div class="sectionThree__text"> 
+                        <h2>Nachtbezorging</h2>
+                        <span>Vandaag besteld vannacht al in huis</span>
+                    </div>
                 </div>
-            </div>
-            <div class="block_caption sec_img">
-                <div class="caption white_text ">
-                    <h2>Nachtbezorging</h2>
-                    <span>Vandaag besteld vannacht al in huis</span>
+                <div class="img_item">
+                    <div class="img">
+                        <img src="/image/bg2.png" alt="">
+                    </div>
+                    <div class="sectionThree__text"> 
+                            <h2>Nachtbezorging</h2>
+                            <span>Vandaag besteld vannacht al in huis</span>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
+       
     <footer class="footer">
         <div class="footer_first">
             <div class="block block_footer">
                 <div class="footer__first_block">
-                    <h3 class="footer_blockname">Over bedrijf</h3>
+                    <h4 class="footer_headers">Over bedrijf</h4>
                     <ul>
                         <a href=""><li>Assortiment</li></a>
                         <a href=""><li>Zalelijke klanten</li></a>
@@ -252,7 +289,7 @@
                     </ul>
                 </div>
                 <div class="footer__second_block">
-                    <h3 class="footer_blockname">Klantenservice</h3>
+                    <h4 class="footer_headers">Klantenservice</h4>
                     <ul>
                         <a href=""><li>Bestellen</li></a>
                         <a href=""><li>Betalen</li></a>
@@ -264,7 +301,7 @@
                     </ul>
                 </div>
                 <div class="footer__third_block">
-                    <h3 class="footer_blockname">Nieuwsbrief</h3>
+                    <h4 class="footer_headers">Nieuwsbrief</h4>
                     <div class="footer_last_block_content">
                         <div class="block_footer_form">
                             <form action="submit" class="footer_form">
@@ -289,13 +326,13 @@
         </div>
         
         <div class="block last_footer">
-            <ul>
-                <a href="#"><li>Algemene voorwarden</li></a>
-                <a href="#"><li>Privacy</li></a>
-                <a href="#"><li>Cookies</li></a>
-                <a href="#"><li>Disclaimer</li></a>
-            </ul>
-            <div>
+            <span>Algemene voorwarden  |  Privacy  |  Cookies  |  Disclaimer</span>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
                 <span>1.011 beoordelingen</span>
             </div>
         </div>

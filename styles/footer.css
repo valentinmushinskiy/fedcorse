@@ -6,19 +6,23 @@
 
 .block_footer{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .footer_headers{
     margin-bottom: 10px;
 }
 
+.media_footer{
+    display: flex;
+    width: 54%;
+}
+
 .footer__first_block{
-    width: 31%;
+    width: 62%;
 }
 
 .footer__second_block{
-    width: 23%;
+    width: 48%;
 }
 
 .footer__third_block{

@@ -5,6 +5,7 @@
 
 .carusel_block h3{
     padding: 18px 26px;
+    border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .carusel__wrapper{
@@ -16,7 +17,9 @@
 .carusel{
     display: flex;
     position: relative;
-    border-top: 1px solid rgb(230, 230, 230);
+
+    left: 0;
+    transition: all ease 1s;
 }
 
 .carusel_item{
@@ -28,6 +31,10 @@
 .carusel_item:last-of-type{
     border-right: 0;
 }
+
+/* .unshowd{
+    display: none;
+} */
 
 .img_carusel{
     display: flex;

@@ -1,4 +1,16 @@
 @media (max-width: 1169px){
+    .logo{
+        margin-left: 20px;
+    }
+
+    .nav{
+        margin-left: 20px;
+    }
+
+    .header__firsLine{
+        margin-right: 20px;
+    }
+
     .carusel_button{
         display: none;
     }
@@ -10,9 +22,33 @@
     }
 }
 
-@media (max-width: 890px){
+@media (max-width: 910px){
     .nav{
         display: none;
+    }
+
+    .logo{
+        margin-left: 40px;
+
+        width: 13%;
+    }
+
+    .header__firsLine{
+        flex-wrap: wrap;
+    }
+
+    .search{
+        width: 81%;
+
+        margin-bottom: 10px;
+    }
+
+    .inloggen_btn{
+        width: 20%;
+    }
+    
+    .btn_card{
+        width: 15%;
     }
 
     .main{
@@ -21,6 +57,12 @@
 }
 
 @media (max-width: 980px){
+    section{
+        margin-top: 20px;
+    }
+    .firstsection__wrapper{
+        margin-top: 20px;
+    }
     .carusel_item{
         flex: 0 0 25%;
     }

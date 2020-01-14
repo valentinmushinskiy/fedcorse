@@ -5,14 +5,9 @@
 
 .img_item{
     position: relative;
-    /* flex: 1 1 49%; */
     
     padding-left: 5px;
-    justify-content: space-between;
-    /* display: flex; */
-    
-    
-    /* overflow: hidden; */
+    /* justify-content: space-between; */
 }
 
 .img_item:first-of-type{

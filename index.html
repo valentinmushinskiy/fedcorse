@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/styles/style.css">   
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jQuery.min.js"></script>
+    <!-- <script src="js/scripts.js" type="module"></script> -->
+    
 </head>
 <body>
 <header class="header">
@@ -17,13 +20,36 @@
             <div class="logo"><img src="/image/logo.png" alt=""></div>
             <div class="header__content">
                 <div class="header__firsLine">
-                    
-                    <button class="btn_select search__select">
-                        Producted
-                        <div>
-                            <i class="fa fa-angle-down"></i>
-                        </div>
-                    </button>
+                    <script>
+                        function getSelectedValue(){
+                            let selector = document.querySelector('.search__select').value;
+                            let a = $(selector);
+                            a.toggleClass('border');
+                
+                            const carusel = document.querySelector('.carusel');
+                
+                            $('html, body').animate({
+                                scrollTop: a.offset().top - 80,
+                            }, 700);
+                
+                            let x = a.offset().left * -1;
+
+                            setTimeout(function(){
+                                carusel.style.left = x - 1 + 'px';
+                            }, 700);
+                            
+                        }
+                    </script>
+                    <select class="btn_select search__select" 
+                    onchange="getSelectedValue();">
+                        <option value="#first">Producten</option>
+                        <option value="#second">Second</option>
+                        <option value="#third">Third</option>
+                        <option value="#four">Four</option>
+                        <option value="#five">Five</option>
+                        <option value="#six">Six</option>
+                        <option value="#seven">Seven</option>
+                    </select>
 
                     <div class="search">
                         <input type="text" class="searchTerm" placeholder="Zoek product">
@@ -172,7 +198,7 @@
         <div class="carusel__wrapper">
 
             <div class="carusel js__move">
-                <div class="carusel_item">
+                <div class="carusel_item" id="first">
                     <a href="#">
                         <div class="img_carusel" >
                             <img src="/image/slider-1.png" alt="">
@@ -186,7 +212,7 @@
                     </a>
                     
                 </div>
-                <div class="carusel_item">
+                <div class="carusel_item" id="second">
                     <a href="#">
                         <div class="img_carusel" >
                             <img src="/image/slider-2.png" alt="">
@@ -199,7 +225,7 @@
                     </a>
                     
                 </div>
-                <div class="carusel_item">
+                <div class="carusel_item" id="third">
                     <a href="#">
                         <div class="img_carusel" >
                             <img src="/image/slider-1.png" alt="">
@@ -211,7 +237,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="carusel_item">
+                <div class="carusel_item" id="four">
                     <a href="#">
                         <div class="img_carusel" >
                             <img src="/image/slider-2.png" alt="">
@@ -224,7 +250,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="carusel_item">
+                <div class="carusel_item" id="five">
                     <a href="#">
                         <div class="img_carusel">
                             <img src="/image/slider-1.png" alt="">
@@ -237,7 +263,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="carusel_item">
+                <div class="carusel_item" id="six">
                     <a href="#">
                         <div class="img_carusel">
                             <img class="" src="/image/slider-2.png" alt="">
@@ -250,7 +276,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="carusel_item">
+                <div class="carusel_item" id="seven">
                     <a href="#">
                         <div class="img_carusel">
                             <img src="/image/slider-1.png" alt="">
@@ -260,19 +286,6 @@
                             <span class="name_carusel">Schuurmachine FERM Ak450970</span>
                             <br>
                             <h2>€ 630,-</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="carusel_item">
-                    <a href="#">
-                        <div class="img_carusel">
-                            <img class="" src="/image/slider-2.png" alt="">
-                        </div>
-                        
-                        <div class="description_carusel">
-                            <span class="name_carusel">Rookmelder Special Ak450970</span>
-                            <br>
-                            <h2>€ 20,-</h2>
                         </div>
                     </a>
                 </div>
@@ -368,6 +381,13 @@
         </div>
     </div>
 </footer>
-<script src="js/scripts.js" type="module"></script>
+<!-- <script data-main="js/config" src="require.js"></script>
+<script>
+    require(['config'], function(){
+
+    })
+</script> -->
+
+
 </body>
 </html>

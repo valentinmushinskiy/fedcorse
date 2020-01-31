@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/styles/style.css">   
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/jQuery.min.js"></script>
+    
     <!-- <script src="js/scripts.js" type="module"></script> -->
     
 </head>
@@ -20,35 +20,15 @@
             <div class="logo"><img src="/image/logo.png" alt=""></div>
             <div class="header__content">
                 <div class="header__firsLine">
-                    <script>
-                        function getSelectedValue(){
-                            let selector = document.querySelector('.search__select').value;
-                            let a = $(selector);
-                            a.toggleClass('border');
-                
-                            const carusel = document.querySelector('.carusel');
-                
-                            $('html, body').animate({
-                                scrollTop: a.offset().top - 80,
-                            }, 700);
-                
-                            let x = a.offset().left * -1;
-
-                            setTimeout(function(){
-                                carusel.style.left = x - 1 + 'px';
-                            }, 700);
-                            
-                        }
-                    </script>
-                    <select class="btn_select search__select" 
-                    onchange="getSelectedValue();">
-                        <option value="#first">Producten</option>
-                        <option value="#second">Second</option>
-                        <option value="#third">Third</option>
-                        <option value="#four">Four</option>
-                        <option value="#five">Five</option>
-                        <option value="#six">Six</option>
-                        <option value="#seven">Seven</option>
+                    <!-- onchange="getSelectedValue();" -->
+                    <select class="btn_select search__select" >
+                        <option value="1">Producten</option>
+                        <option value="2">Second</option>
+                        <option value="3">Third</option>
+                        <option value="4">Four</option>
+                        <option value="5">Five</option>
+                        <option value="6">Six</option>
+                        <option value="7">Seven</option>
                     </select>
 
                     <div class="search">
@@ -59,6 +39,23 @@
                     </div>
 
                     <div class="burger fa fa-navicon">
+                        <nav class="burger__nav">
+                            <a href="#">Behiizingen</a>
+                            <a href="#">Bevestigingsmateriaal</a>
+                            <a href="#">Draad en kabel</a>
+                            <a href="#">Domotica</a>
+                            <a href="#">Schakelmateriaal</a>
+                            <a href="#">Rook- en hittemeldors</a>
+                            <a href="#">Verdeelsystemen</a>
+                            <a href="#">Lichtronnen</a>
+                            <a href="#">LED-lichtbronnen</a>
+                            <a href="#">Installatiemateriaal</a>
+                            <a href="#">Kabeldraagsystemen</a>
+                            <a href="#">Armaturen</a>
+                            <a href="#">Data en multimedia</a>
+                            <a href="#">Ruimte-oplossingen</a>
+                            <a href="#">Lichtregeling</a>
+                        </nav>
                     </div>
                     
 
@@ -198,92 +195,92 @@
         <div class="carusel__wrapper">
 
             <div class="carusel js__move">
-                <div class="carusel_item" id="first">
+                <div class="carusel_item" id="1">
                     <a href="#">
                         <div class="img_carusel" >
                             <img src="/image/slider-1.png" alt="">
                         </div>
                         
                         <div class="description_carusel">
-                            <span class="name_carusel">Schuurmachine FERM Ak450970</span>
+                            <span class="name_carusel">1 Schuurmachine FERM Ak450970</span>
                             <br>
                             <h2>€ 150,-</h2>
                         </div>
                     </a>
                     
                 </div>
-                <div class="carusel_item" id="second">
+                <div class="carusel_item" id="2">
                     <a href="#">
                         <div class="img_carusel" >
                             <img src="/image/slider-2.png" alt="">
                         </div>
                         <div class="description_carusel">
-                            <span class="name_carusel">Rookmelder Special Ak450970</span>
+                            <span class="name_carusel">2 Rookmelder Special Ak450970</span>
                             <br>
                             <h2>€ 50,-</h2>
                         </div>
                     </a>
                     
                 </div>
-                <div class="carusel_item" id="third">
+                <div class="carusel_item" id="3">
                     <a href="#">
                         <div class="img_carusel" >
                             <img src="/image/slider-1.png" alt="">
                         </div>
                         <div class="description_carusel">
-                            <span class="name_carusel">Schuurmachine FERM Ak450970</span>
+                            <span class="name_carusel">3 Schuurmachine FERM Ak450970</span>
                             <br>
                             <h2>€ 150,-</h2>
                         </div>
                     </a>
                 </div>
-                <div class="carusel_item" id="four">
+                <div class="carusel_item" id="4">
                     <a href="#">
                         <div class="img_carusel" >
                             <img src="/image/slider-2.png" alt="">
                         </div>
 
                         <div class="description_carusel">
-                            <span class="name_carusel">Rookmelder Special Ak450970</span>
+                            <span class="name_carusel">4 Rookmelder Special Ak450970</span>
                             <br>
                             <h2>€ 50,-</h2>
                         </div>
                     </a>
                 </div>
-                <div class="carusel_item" id="five">
+                <div class="carusel_item" id="5">
                     <a href="#">
                         <div class="img_carusel">
                             <img src="/image/slider-1.png" alt="">
                         </div>
                         
                         <div class="description_carusel">
-                            <span class="name_carusel">Schuurmachine FERM Ak450970</span>
+                            <span class="name_carusel">5 Schuurmachine FERM Ak450970</span>
                             <br>
                             <h2>€ 150,-</h2>
                         </div>
                     </a>
                 </div>
-                <div class="carusel_item" id="six">
+                <div class="carusel_item" id="6">
                     <a href="#">
                         <div class="img_carusel">
                             <img class="" src="/image/slider-2.png" alt="">
                         </div>
                         
                         <div class="description_carusel">
-                            <span class="name_carusel">Rookmelder Special Ak450970</span>
+                            <span class="name_carusel">6 Rookmelder Special Ak450970</span>
                             <br>
                             <h2>€ 50,-</h2>
                         </div>
                     </a>
                 </div>
-                <div class="carusel_item" id="seven">
+                <div class="carusel_item" id="7">
                     <a href="#">
                         <div class="img_carusel">
                             <img src="/image/slider-1.png" alt="">
                         </div>
                         
                         <div class="description_carusel">
-                            <span class="name_carusel">Schuurmachine FERM Ak450970</span>
+                            <span class="name_carusel">7 Schuurmachine FERM Ak450970</span>
                             <br>
                             <h2>€ 630,-</h2>
                         </div>
@@ -388,6 +385,8 @@
     })
 </script> -->
 
+<script src="js/jQuery.min.js"></script>
+<script src="js/scripts.js" type="module"></script>
 
 </body>
 </html>

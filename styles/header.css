@@ -23,6 +23,7 @@ header{
 .header__firsLine{
     display: flex;
     flex-direction: row;
+    position: relative;
     /* flex-wrap: wrap; */
 
     
@@ -74,14 +75,20 @@ header{
 .burger{
     display: none;
 
+    z-index: 1;
     position: absolute;
     height: 40px;
 
     font-size: 32px;
-    align-items: center;
+    align-items: flex-end;
 
     right: 0;
+    top: 5px;
     cursor: pointer;
+}
+
+.burger{
+    flex-direction: column;
 }
 
 .switch{
@@ -161,3 +168,22 @@ header{
 .list li .fa{
     margin-right: 10px;
 }
+
+.burger__nav{
+    display: none;
+    flex-direction: column;
+
+    width: 30%;
+
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #ffc600;
+
+    width: 250px;
+}
+
+.flex{
+    display: flex;
+}
+
+

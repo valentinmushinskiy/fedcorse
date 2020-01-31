@@ -19,7 +19,7 @@
     position: relative;
 
     left: 0;
-    transition: all ease 1s;
+    transition: all ease .5s;
 }
 
 .carusel_item{
